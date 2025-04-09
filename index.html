@@ -7,19 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans">
-    <header class="flex justify-between items-center px-6 md:px-16 py-6">
-      <div class="flex justify-center items-center gap-2">
-        <img src="images/Frame 993.png" alt="RentCars Logo"  />
+    <nav class="bg-white shadow-sm py-4 px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-blue-600">RENTCARS</div>
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Become a renter</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Rental deals</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">How it works</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Why choose us</a>
       </div>
-      <nav class="hidden  md:flex gap-8 text-gray-700 items-center font-medium">
-        <a href="#">Become a renter</a>
-        <a href="#">Rental deals</a>
-        <a href="#">How it work</a>
-        <a href="#">Why choose us</a>
-        <a href="#">Sign in</a>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded">Sign up</button>
+      <!-- Auth Buttons -->
+      <div class="hidden md:flex space-x-4">
+      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium px-4 py-2">Sign in</a>
+      <a href="#" class="bg-blue-600 text-white font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Sign up</a>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+      <button class="text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      </button>
+      </div>
+      </div>
       </nav>
-    </header>
 
     
     <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-10">
